@@ -2400,7 +2400,7 @@ static const AVOption options[] = {
     { "utc_timing_url", "URL of the page that will return the UTC timestamp in ISO format", OFFSET(utc_timing_url), AV_OPT_TYPE_STRING, { 0 }, 0, 0, E },
     { "window_size", "number of segments kept in the manifest", OFFSET(window_size), AV_OPT_TYPE_INT, { .i64 = 0 }, 0, INT_MAX, E },
     { "write_prft", "Write producer reference time element", OFFSET(write_prft), AV_OPT_TYPE_BOOL, {.i64 = -1}, -1, 1, E},
-    { "start_number", "Starts the segment count at this number", OFFSET(start_number), AV_OPT_TYPE_INT, { .i64 = 1 }, 0, INT_MAX, E },
+    { "start_number", "Starts the segment count at this number. Should be used with 'ss' and 'use_timeline' for proper usage", OFFSET(start_number), AV_OPT_TYPE_INT, { .i64 = 1 }, 0, INT_MAX, E },
     { NULL },
 };
 
